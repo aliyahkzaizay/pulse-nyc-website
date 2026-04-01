@@ -3,7 +3,10 @@ import './styles/App.css'
 
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
+
+import { FinalCTA } from './components/Final-cta'
 import { Footer } from './components/Footer'
+
 
 function App() {
 
@@ -15,6 +18,7 @@ function App() {
 
       <Hero/>
 
+      <FinalCTA/>
       <Footer />
 
 
