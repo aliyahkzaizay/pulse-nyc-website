@@ -2,7 +2,6 @@ import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import skyline from "../assets/skyline2.jpg";
 
-
 export function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -20,21 +19,17 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0B0B0F] via-[#1a0d2e] to-[#0B0B0F]" />
-      
+
       {/* 🌃 NYC Skyline Background */}
       <div className="absolute inset-0 opacity-60">
         <div
           className="absolute inset-0 bg-cover bg-center brightness-75"
           style={{
-            // 👉 CHANGE THIS URL TO YOUR SKYLINE IMAGE
+            // 👉 CHANGE THIS TO USE A DIFFERENT SKYLINE IMAGE
             backgroundImage: `url(${skyline})`,
-
-            //  'url(https://images.unsplash.com/photo-1674790943331-f84128b5ad89?auto=format&fit=crop&w=1600&q=80)'
           }}
-
         />
 
         {/* Dark overlay for readability */}
@@ -93,7 +88,6 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -119,23 +113,25 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-white/70 mb-12"
+          className="text-base md:text-2xl text-white/70 mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          Real-time nightlife. No guesswork.
+          NYC nightlife, in real time.
+          <br />
+          Find where it’s lit, discover your vibe, and move through the city with confidence.
+          <br />
+          <span className="text-white font-bold">
+            Launching soon. Join the waitlist.
+          </span>
         </motion.p>
 
-
         <a
-            href="YOUR_GOOGLE_FORM_LINK"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-xl bg-[#6C3BFF] px-6 py-3 text-white font-medium hover:bg-[#7D52FF] shadow-[0_0_20px_rgba(108,59,255,0.35)] transition-all duration-200"
-            >
-            Join the Waitlist
+          href="YOUR_GOOGLE_FORM_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center rounded-xl bg-[#6C3BFF] px-6 py-3 text-white font-medium hover:bg-[#7D52FF] shadow-[0_0_20px_rgba(108,59,255,0.35)] transition-all duration-200"
+        >
+          Join the Waitlist
         </a>
-
-        
-
       </div>
     </section>
   );
