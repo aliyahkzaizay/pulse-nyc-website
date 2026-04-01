@@ -5,6 +5,8 @@ import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { ValueProps } from './components/Value-props'
 
+
+import { PlanYourNight } from './components/Plan-your-night'
 import { FinalCTA } from './components/Final-cta'
 import { Footer } from './components/Footer'
 
@@ -18,6 +20,8 @@ function App() {
       <Navbar/>
       <Hero/>
       <ValueProps/>
+
+      <PlanYourNight/>
 
       <FinalCTA/>
       <Footer />
