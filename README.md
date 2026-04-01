@@ -7,10 +7,10 @@ This repository contains the marketing website / landing page for Pulse-NYC
 ---
 
 ## Tech Stack
-React (Vite)
-TypeScript
-Tailwind CSS
-Vercel (deployment)
+- React (Vite)
+- TypeScript
+- Tailwind CSS
+- Vercel (deployment)
 
 ---
 
