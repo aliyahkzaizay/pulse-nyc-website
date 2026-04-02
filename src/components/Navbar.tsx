@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import PulseLogo from '../assets/PulseVec.svg';
+import { Link } from "react-router-dom";
+
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,12 +36,20 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6C3BFF] to-[#FF2E88] flex items-center justify-center">
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
-          </div>
-          <span className="text-xl font-bold text-white">PULSE-NYC</span>
-        </div>
+
+
+        <Link to="/" className='flex items-center '>
+
+            <img src={PulseLogo} alt = "Pulse NYC Logo"
+            className="h-20 w-30 object-contain drop-shadow-[0_0_12px_rgba(108,59,255,0.6)]"/>
+
+            
+
+            <span className="text-xl font-bold tracking-wide text-white leading-none">
+                PULSE<span className="text-white/50">.NYC</span>
+            </span>
+        
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -52,7 +63,7 @@ export function Navbar() {
             onClick={() => scrollToSection('how-it-works')}
             className="text-white/80 hover:text-white transition-colors"
           >
-            How it Works
+            Product
           </button>
           <button
             onClick={() => scrollToSection('download')}
@@ -113,7 +124,7 @@ export function Navbar() {
               onClick={() => scrollToSection('how-it-works')}
               className="text-left text-white/80 hover:text-white transition-colors"
             >
-              How it Works
+              Product
             </button>
             <button
               onClick={() => scrollToSection('download')}

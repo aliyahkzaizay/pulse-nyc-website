@@ -33,7 +33,7 @@ export function Footer() {
               </motion.a>
             
               <motion.a
-                href="#"
+                href="mailto:pulse.live.nyc@gmail.com"
                 whileHover={{ scale: 1.1, y: -2 }}
                 className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#FF2E88] transition-colors"
               >
@@ -53,7 +53,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#how-it-works" className="text-white/60 hover:text-white transition-colors">
-                  How It Works
+                  Product
                 </a>
               </li>
               <li>

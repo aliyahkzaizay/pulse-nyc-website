@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Apple, Smartphone } from 'lucide-react';
+// import { Apple, Smartphone } from 'lucide-react';
 
 export function FinalCTA() {
   return (
@@ -54,7 +54,7 @@ export function FinalCTA() {
           <div className="flex flex-col items-center gap-5">
 
             <a
-                href="YOUR_GOOGLE_FORM_LINK"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdphH7x-I1_-2FhWs2z3nSjKWCeKDD04aKE4AFqm7dtazGyKA/viewform?usp=publish-editor"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-block rounded-xl p-[2px] overflow-hidden"
@@ -71,7 +71,7 @@ export function FinalCTA() {
             </a>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#6C3BFF]/20 border border-[#6C3BFF]/40 rounded-full">
               <div className="w-2 h-2 bg-[#00E0FF] rounded-full animate-pulse" />
-              <span className="text-white/80 text-sm">Launching Spring 2026</span>
+              <span className="text-white/80 text-sm">Launching Summer 2026</span>
             </div>
 
           </div>
@@ -85,13 +85,13 @@ export function FinalCTA() {
             className="mt-12 flex flex-wrap items-center justify-center gap-4"
           >
             <div className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl">
-              <Apple className="w-5 h-5 text-white" />
-              <span className="text-white/80">iOS</span>
+              {/* <Apple className="w-5 h-5 text-white" /> */}
+              <div className="text-white/80">Available on iOS</div>
             </div>
-            <div className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl">
+            {/* <div className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl">
               <Smartphone className="w-5 h-5 text-white" />
               <span className="text-white/80">Android</span>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
       </div>

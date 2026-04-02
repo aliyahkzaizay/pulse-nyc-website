@@ -125,7 +125,7 @@ export function Hero() {
         </motion.p>
 
         <a
-          href="YOUR_GOOGLE_FORM_LINK"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdphH7x-I1_-2FhWs2z3nSjKWCeKDD04aKE4AFqm7dtazGyKA/viewform?usp=publish-editor"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-xl bg-[#6C3BFF] px-6 py-3 text-white font-medium hover:bg-[#7D52FF] shadow-[0_0_20px_rgba(108,59,255,0.35)] transition-all duration-200"
