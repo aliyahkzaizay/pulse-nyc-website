@@ -115,7 +115,10 @@ export function PlanYourNight() {
 
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-white/60">{stage.time}</span>
-                    <span className="text-xl">
+                    <span className="text-xl font-semibold"
+                    style={{color: stage.color}}
+                    
+                    >
                       {stage.vibe === 'LIT 🔥' ? stage.vibe : `· ${stage.vibe}`}
                     </span>
                   </div>
