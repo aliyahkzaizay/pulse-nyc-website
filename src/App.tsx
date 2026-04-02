@@ -9,10 +9,15 @@ import Home from './pages/home'
 import { AboutsPage } from './pages/about'
 import {ContactsPage} from './pages/contact'
 
+import { ScrollToTop } from './components/scroll-to-top'
+
+
 function App() {
   return (
     <div className="min-h-screen bg-[#0B0B0F] text-white">
       {/* <Navbar /> */}
+
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
