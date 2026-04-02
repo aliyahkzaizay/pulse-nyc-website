@@ -10,6 +10,7 @@ import { AppShowcase } from './components/App-showcase'
 import { PlanYourNight } from './components/Plan-your-night'
 import { FinalCTA } from './components/Final-cta'
 import { Footer } from './components/Footer'
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 
       <FinalCTA/>
       <Footer />
+      <Analytics/>
 
 
       
