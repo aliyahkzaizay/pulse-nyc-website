@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import {Mail } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
+import {Link } from "react-router-dom";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -68,15 +69,23 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">Company</h4>
             <ul className="space-y-3">
+            <li>
+                <Link
+                    to="/about"
+                    className="text-white/60 hover:text-white transition-colors"
+                >
+                    About
+                </Link>
+            </li>
               <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  About
-                </a>
-              </li>
               <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  Contact
-                </a>
+                <Link
+                    to="/contact"
+                    className="text-white/60 hover:text-white transition-colors"
+                >
+                    Contact
+                </Link>
+</li>
               </li>
             
             </ul>
