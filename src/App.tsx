@@ -6,7 +6,7 @@ import { Footer } from './components/Footer'
 import { Analytics } from "@vercel/analytics/react"
 
 import Home from './pages/home'
-import { AboutsPage } from './pages/about'
+// import { AboutsPage } from './pages/about'
 import {ContactsPage} from './pages/contact'
 
 import { ScrollToTop } from './components/scroll-to-top'
@@ -21,7 +21,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutsPage />} />
+        {/* <Route path="/about" element={<AboutsPage />} /> */}
         <Route path="/contact" element={<ContactsPage />} />
       </Routes>
 

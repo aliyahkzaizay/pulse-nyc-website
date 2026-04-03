@@ -69,14 +69,14 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">Company</h4>
             <ul className="space-y-3">
-            <li>
+            {/* <li>
                 <Link
                     to="/about"
                     className="text-white/60 hover:text-white transition-colors"
                 >
                     About
                 </Link>
-            </li>
+            </li> */}
               <li>
               <li>
                 <Link
@@ -102,10 +102,10 @@ export function Footer() {
             {/* <a href="#" className="text-white/40 hover:text-white transition-colors">
               Terms of Service
             </a> */}
-            <a href="#" className="text-white/40 hover:text-white transition-colors">
+            {/* <a href="#" className="text-white/40 hover:text-white transition-colors">
               Privacy Policy
             </a>
-            
+             */}
           </div>
         </div>
       </div>
