@@ -16,7 +16,7 @@ This repository contains the marketing website / landing page for Pulse-NYC
 
 ## Live Site
 
-(Add your Vercel link here once deployed)
+[(Add your Vercel link here once deployed)](https://pulse-nyc-website.vercel.app/)
 
 ---
 
